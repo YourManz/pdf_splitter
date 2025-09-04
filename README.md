@@ -4,12 +4,12 @@ Split a multi-page PDF into named one-page PDFs that sum to the original.
 
 ## Requirements
 - Python 3
-- [PyPDF2](https://pypi.org/project/PyPDF2/)
+- [pypdf](https://pypi.org/project/pypdf/) (the modern fork of PyPDF2)
 
 Install the dependency:
 
 ```bash
-pip install PyPDF2
+pip install pypdf
 ```
 
 ## Usage
