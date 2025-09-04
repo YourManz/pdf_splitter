@@ -7,7 +7,10 @@ Usage:
 """
 from pathlib import Path
 import argparse
-from PyPDF2 import PdfReader, PdfWriter
+try:
+    from PyPDF2 import PdfReader, PdfWriter
+except ModuleNotFoundError:  # PyPDF2 is the old package name
+    from pypdf import PdfReader, PdfWriter
 
 
 def split_pdf(pdf_path: Path, output_dir: Path) -> None:
